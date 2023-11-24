@@ -1,6 +1,8 @@
 # GoodHabits Wiki!
 
-Este projeto tem como objetivo sintetizar todas as boas práticas de programação; são eles:
+Este projeto tem como objetivo sintetizar todas as boas práticas de programação.
+
+São elas:
 
 * Padrão de Codificação;
 * Nomenclaturas Significativas;
