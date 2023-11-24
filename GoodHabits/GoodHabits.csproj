@@ -7,4 +7,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="3 - Design Patterns\" />
+    <Folder Include="4 - Solid\4.3 - LSP\" />
+    <Folder Include="4 - Solid\4.4 - ISP\" />
+    <Folder Include="4 - Solid\4.5 - DIP\" />
+    <Folder Include="6 - Segurança\" />
+    <Folder Include="7 - DesempenhoOtimizacao\" />
+  </ItemGroup>
+
 </Project>

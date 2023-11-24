@@ -1,8 +1,10 @@
 ﻿/*
- * Padrão de Codificação: Definem um conjunto de regras e conveções para escrita de código, tornando-o mais legível, fácil de manter e menos propenso a erros.
+ * Padrão de Codificação: Definem um conjunto de regras e conveções para escrita de código, tornando-o mais legível, 
+ * fácil de manter e menos propenso a erros. Esse padrão pode abranger disposição de espaçamentos, indentação e até 
+ * como os comentários vão ser formatados.
  * 
- * Bom: Usar nomes descritivos e significativos.
- * Ruim: Usar abreviações ou nomes de variáveis sem sentido.
+ * Nomenclatura e Clareza: Refere-se diretamente à escolha de nomes descritivos para variáveis, funções e classes; 
+ * algo que fere essa boa prática seria o uso de abreviações ou letras sem sentido.
  */
 
 namespace GoodHabits.PadraoCodificacao
@@ -12,7 +14,7 @@ namespace GoodHabits.PadraoCodificacao
         public ClienteVip(
             Guid id, 
             DateTime dataCriacao, 
-            string nome, 
+            string primeiroNome, 
             string sobrenome, 
             int idade, 
             DateTime dataNascimento, 
@@ -20,7 +22,7 @@ namespace GoodHabits.PadraoCodificacao
         {
             Id = id;
             DataCriacao = dataCriacao;
-            Nome = nome;
+            PrimeiroNome = primeiroNome;
             Sobrenome = sobrenome;
             Idade = idade;
             DataNascimento  = dataNascimento;
@@ -29,20 +31,20 @@ namespace GoodHabits.PadraoCodificacao
 
         public Guid Id { get; set; }
         public DateTime DataCriacao { get; set; }
-        public string Nome { get; set; }
+        public string PrimeiroNome { get; set; }
         public string Sobrenome { get; set; }
         public int Idade { get; set; }
         public DateTime DataNascimento { get; set; }
         public string Endereco { get; set; }
 
         public ClienteVip Criar(
-            string nome,
+            string primeiroNome,
             string sobrenome,
             int idade,
             DateTime dataNascimento,
             string endereco)
         {
-            return new ClienteVip(Guid.NewGuid(), DateTime.Now, nome, sobrenome, idade, dataNascimento, endereco);
+            return new ClienteVip(Guid.NewGuid(), DateTime.Now, primeiroNome, sobrenome, idade, dataNascimento, endereco);
         }
     }
 }
